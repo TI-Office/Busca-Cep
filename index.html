@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ViaCEP Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="script.js"></script>
+
+    <!-- Adicionando css -->
+	<style>
+    .frm-group{
+  padding:5px;
+}
+.frm-group label{
+  display: block;
+}
+ 
+.frm-group:nth-child(1){
+  border: 1px solid #CCC;
+  background: #e5e5e5;
+  padding: 10px 5px;
+}
+	</style>
+    </head>
+
+    <body>
+    <!-- Inicio do formulario -->
+      <form method="get" action=".">
+ 	<div class="frm-group">
+       <label>Cep:<input name="cep" type="text" id="cep"value=""size="10"maxlength="9"onblur="pesquisacep(this.value);"/></label>
+	<br/>
+	</div>
+ 	<div class="frm-group">
+	<label>Rua:<input name="rua" type="text" id="rua" size="60"/></label><br/>
+  </div>
+ <div class="frm-group">      
+<label>Bairro:
+        <input name="bairro" type="text" id="bairro" size="40"/></label><br/>
+        </div>
+ <div class="frm-group">
+<label>Cidade:
+        <input name="cidade" type="text" id="cidade" size="40"/></label><br/>
+        </div>
+ <div class="frm-group">
+<label>Estado:
+        <input name="uf" type="text" id="uf" size="2"/></label><br />
+        </div>
+ <div class="frm-group">
+<label>IBGE:
+        <input name="ibge" type="text" id="ibge" size="8"/></label><br/>
+</div>
+
+      </form>
+    </body>
+
+    </html>
